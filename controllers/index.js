@@ -22,3 +22,5 @@ res.render('todo', {sanitizeData});
 
 
 module.exports(router);
+
+// Exporting router logic to rest of application
