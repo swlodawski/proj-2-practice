@@ -1,9 +1,9 @@
-const {Model, DataTypes} = require('sequelize')
-// 
+const {Model, DataTypes} = require('sequelize');
+// I am destructuring the parent constructor object using sequelize and passing in the parameters of model and datatypes.
 const sequelize = require('../config/connection');
 // I am connecting the environmental variables file to be able to connect to my database and create the model tables.
 class Task extends Model {};
-// 
+// I am creating a class to allow child objects to be created from the parent constructor object of model.
 Task.init ({
     id: {
         type: DataTypes.INTEGER,
